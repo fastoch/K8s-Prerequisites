@@ -1,1 +1,40 @@
 # K8s-Prerequisites
+
+ Do NOT Learn Kubernetes Without Knowing These Concepts... - https://www.youtube.com/watch?v=wXuSqFJVNQA  
+
+# Understand Containerization
+
+You deploy containerized apps & services to K8s.  
+Docker defines a container as a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.  
+A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: 
+- code
+- runtime
+- system tools
+- libraries
+- and settings
+
+---
+
+To containerize your app, you first create a dockerfile that has all the instructions for building an image of your app.  
+
+So, if you're containerizing a **React** app, you might start off with: 
+- pulling a **Node** runtime (from the Docker Hub registry),
+- then you'll add your **package.json**,
+- then you'll install dependencies,
+- then you'll add your code
+- then you'll add the `npm run start` command to start your app
+
+![image](https://github.com/user-attachments/assets/1ac6ec1a-fee1-4800-abbc-5f27216fd387)
+
+`CMD ['npm', 'start']` is a Dockerfile instruction used to specify the default command that should be executed when a container is run from the image.  
+When this command is executed, it typically runs a predefined **script** specified in the "start" property of a package's "scripts" object in the **package.json** file.  
+If no "start" script is defined, npm will default to running "node server.js".  
+Using `CMD ['npm', 'start']` in a Dockerfile is a common practice for Node.js applications, as it provides a standardized way to start the application regardless of its specific entry point.  
+
+---
+
+Once you have this dockerfile assembled, you can use Docker to build 
+
+@3/13
+---
+EOF
