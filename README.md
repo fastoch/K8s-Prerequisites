@@ -7,6 +7,7 @@
 As a developer, or as a DevOps engineer, you will deploy containerized apps & services to K8s.  
 
 Docker defines a container as a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.  
+
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: 
 - code
 - runtime
@@ -29,9 +30,10 @@ So, if you're containerizing a **React** app, you might start off with:
 
 ---
 
-`CMD ['npm', 'start']` is a Dockerfile instruction used to specify the default command that should be executed when a container is run from the image.  
+`CMD ['npm', 'start']` is a Dockerfile instruction used to specify the default command that should be executed when a container is run from an image.  
+
 When this command is executed, it typically runs a predefined **script** specified in the "start" property of a package's "scripts" object in the **package.json** file.  
-If no "start" script is defined, npm will default to running "node server.js".  
+
 Using `CMD ['npm', 'start']` in a Dockerfile is a common practice for Node.js applications, as it provides a standardized way to start the application regardless of its specific entry point.  
 
 ---
@@ -39,13 +41,13 @@ Using `CMD ['npm', 'start']` in a Dockerfile is a common practice for Node.js ap
 Once you have this dockerfile assembled, you can use Docker to build an image. This image will be the blueprint for running your app.   
 This image becomes a container at runtime. When you run the image, Docker is going to follow the steps, the instructions provided in your dockerfile.  
 
-If you go to an image repository like Docker Hub, you can find thousands of images that you can pull down to your computer and run in a container.  
-There's images for pretty much anything...  
+If you go to an image repository like Docker Hub, you can find thousands of images that you can pull down to your computer and run in a container. There's images for pretty much anything...  
 
 Containers are isolated environments which offer portability and ease of use, you can spin them up or down very easily.  
 You can run multiple copies of a container for ensuring high availability, and couple that with load balancing.  
 And they can run on any computer, regardless of the host OS, no need to worry about hardware or software compatibility.  
 
+---
 
 
 
