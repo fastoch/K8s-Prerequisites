@@ -90,8 +90,23 @@ The third prerequisite to learning K8s.
 YAML = YAML ain't markup language (a recursive acronym like GNU is not Unix).  
 
 YAML is a data serialization language for writing configuration files.  
-It's a superset of JSON. Every JSON file is also a valid YAML file.
+It's a superset of JSON. Every JSON file is also a valid YAML file.  
 
-@7/13
+The resources in K8s are created in a declarative way.  
+You declare how you want things to be, and K8s will make sure that it meets that declaration.  
+
+That declarative configuration is provided in a .yaml config file called a **manifest** file.  
+This manifest file describes the desired state of a K8s object.  
+
+In other terms, YAML files are configuration files that house the declaration of your K8s objects.  
+
+---
+
+# Networking basics
+
+The fourth prerequisite before learning K8s.  
+
+
+@9/13
 ---
 EOF
