@@ -68,13 +68,30 @@ of your containers.
 
 # Cloud Basics
 
-That is the second prerequisite you need prior to learning K8s.  
+That is the second prerequisite you need to cover prior to learning K8s.  
 
+Companies often choose to deploy K8s in the Cloud, as a managed solution.  
+So, understanding the basics of Cloud computing is essential before learning K8s.
 
+The Cloud providers manage the K8s clusters on their own Virtual Machines or servers.  
+And from there, it can tie into all the other services that a Cloud provider offers, such as:
+- identity and access 
+- logging
+- networking
+- ...
 
+However, when you deploy K8s in the Cloud, it can get expensive pretty quick.
 
+---
 
+# YAML and Declarative configurations
 
-@5/13
+The third prerequisite to learning K8s.  
+YAML = YAML ain't markup language (a recursive acronym like GNU is not Unix).  
+
+YAML is a data serialization language for writing configuration files.  
+It's a superset of JSON. Every JSON file is also a valid YAML file.
+
+@7/13
 ---
 EOF
