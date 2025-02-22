@@ -104,9 +104,29 @@ In other terms, YAML files are configuration files that house the declaration of
 
 # Networking basics
 
-The fourth prerequisite before learning K8s.  
+The fourth prerequisite before learning K8s, specifically Linux networking.  
+In K8s there's communication between the pods and the containers within them, and there's networking out to external destinations.  
 
+There are different networking service types:
+- clusterIP
+- LoadBalancer
+- NodePort
 
-@9/13
+You need to grasp networking concepts like:
+- OSI Model
+- Networking Protocols
+- IP configuration
+- DNS
+- Routing
+
+---
+
+# Terminal proficiency
+
+The fifth prerequisite to learning K8s.  
+To interact with a K8s cluster, you'll use the `kubectl`, a CLI tool.  
+
+https://kubernetes.io/docs/reference/kubectl/
+
 ---
 EOF
